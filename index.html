@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игра "Пары"</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      startPlayGame();
+    });
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <h1 class="title">Игра "Найди пару"</h1>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container main__container">
+      <form class="form">
+        <label class="form__label">
+          <span>Введите количество карточек по горизонтали (от 2 до 10)</span>
+          <input class="gor" type="number" max="10" min="2">
+        </label>
+        <label class="form__label">
+          <span>Введите количество карточек по вертикали (от 2 до 10)</span>
+          <input class="ver" type="number" max="10" min="2">
+        </label>
+        <div class="timer-block">
+          <span class="timer-block__min">60</span>
+          <span class="timer-block__text">сек</span>
+        </div>
+        <button class="btn">Начать игру</button>
+      </form>
+      <div class="play-field"></div>
+    </div>
+  </main>
+</body>
+</html>
